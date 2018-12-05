@@ -1,3 +1,46 @@
+.section--products {
+
+    .tab-content>.active,
+    .tab-content>.btn-outline:active {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+.furniture_tab_list {
+    justify-content: flex-end;
+}
+
+.furniture_tab_section {
+    background-color: #fff;
+    border: none;
+}
+
+.furniture_tab_dots {
+    ul {
+        background-color: rgb(255, 255, 255);
+        margin: 0px;
+        padding: 0px 0px 1rem 0px;
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+
+        li {
+            display: inline-block;
+            margin: 0 0.5rem;
+
+            a {
+                display: block;
+                width: 15px;
+                height: 15px;
+                background-color: rgb(225, 225, 225);
+                border-radius: 6px;
+            }
+        }
+    }
+}
+
 @media (max-width: 1025px) {
     [class*="col-"] {
         flex: 0 0 33.33%;
@@ -13,6 +56,12 @@
     [class*="col-"] {
         flex: 0 0 50%;
         max-width: 50%;
+    }
+
+    .furniture_tab_dots {
+        ul {
+            justify-content: center;
+        }
     }
 
     .hide_tablet {
