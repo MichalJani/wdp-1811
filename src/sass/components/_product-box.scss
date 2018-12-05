@@ -52,14 +52,21 @@
     }
 
     .stars {
-      a {
-        text-decoration: none;
+      .star {
+        
         color: rgb(42, 42, 42);
         @extend .far;
         @extend .fa-star;
 
         &.full {
           @extend .fas;
+        }
+        &.client-star {
+          @extend .fas;
+          color: $primary;
+        }
+        &.star-hover {
+          color: $primary; 
         }
       }
     }
