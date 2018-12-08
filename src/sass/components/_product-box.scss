@@ -90,7 +90,7 @@
 }
 
 .product-box:hover {
-
+  @extend .animation-on-hover;
   .buttons {
     opacity: 1;
   }

@@ -4,6 +4,7 @@
    .post-box {
       margin-bottom: 2rem;
       &:hover {
+        @extend .animation-on-hover;
        .btn-main {
          color: #ffffff !important;
          background-color: $primary;

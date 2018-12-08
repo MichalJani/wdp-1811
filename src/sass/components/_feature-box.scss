@@ -50,6 +50,7 @@
   }
 
   &.active {
+    @extend .animation-on-hover;
     i {
       background-color: $primary;
       color: #ffffff;
