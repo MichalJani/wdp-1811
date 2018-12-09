@@ -1,10 +1,11 @@
-var allStars = document.querySelectorAll(".stars");
+(function () {
+const allStars = document.querySelectorAll(".stars");
 
-for (var i = 0; i < allStars.length; i++) {
+for (let i = 0; i < allStars.length; i++) {
   allStars[i].addEventListener("click", rate);
   allStars[i].addEventListener("mouseover", hover);
   allStars[i].addEventListener("mouseout", noHover);
-
+}
   function rate(event) {
     let clickedStar = event.target;
     let stars = this.querySelectorAll(".star");
@@ -43,5 +44,5 @@ for (var i = 0; i < allStars.length; i++) {
     star.classList.remove("star-hover");
     });
   }
-}
 
+})();
