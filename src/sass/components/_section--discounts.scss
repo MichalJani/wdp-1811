@@ -1,0 +1,29 @@
+.discounts_overbox {
+    display: flex;
+    height: 450px;
+    margin-bottom: 20px;
+}
+
+.discounts_box {
+    width: 50%;
+    padding: 15px;
+}
+
+.discounts_box_small {
+    width: 100%;
+    height: 50%;
+
+    &:first-child {
+        padding-bottom: 15px;
+    }
+
+    &:last-child {
+        padding-top: 15px;
+    }
+}
+
+.discounts_box_image {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
