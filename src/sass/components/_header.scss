@@ -59,6 +59,7 @@ header {
         margin-right: 15px;
 
         .cart-icon {
+          @extend .animation-on-hover;
           background-color: $primary;
           width: 55px;
           height: 50px;

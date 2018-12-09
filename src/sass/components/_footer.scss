@@ -16,6 +16,7 @@ footer {
         list-style: none;
         li {
           a {
+            @extend .animation-on-hover;
             font-size: 14px;
             line-height: 30px;
             color: rgb(169,169,169);
@@ -67,6 +68,7 @@ footer {
           margin-left: 1rem;
 
           a {
+            @extend .animation-on-hover;
             color: rgb(169,169,169);
             text-decoration: none;
 

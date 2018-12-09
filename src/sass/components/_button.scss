@@ -5,6 +5,7 @@
   line-height: 24px;
   font-weight: 600;
   padding: 10px 30px;
+  @extend .animation-on-hover;
 
   &:not(.no-hover):hover {
     @extend .animation-on-hover;

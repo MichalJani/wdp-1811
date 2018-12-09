@@ -2,6 +2,7 @@
   padding: 5rem 0;
   a {
     text-decoration:none;
+    @extend .animation-on-hover;
     i {
         background-color: #ffffff;
         color: $text-color;
