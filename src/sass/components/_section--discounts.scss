@@ -27,3 +27,18 @@
     object-fit: cover;
     width: 100%;
 }
+
+@media (max-width: 576px) {
+    .discounts_overbox {
+        flex-direction: column;
+        height: 650px;
+    }
+
+    .discounts_box {
+        width: 100%;
+        height: 50%;
+    }
+    .discounts_box_small{
+        height: 50%;
+    }
+}
