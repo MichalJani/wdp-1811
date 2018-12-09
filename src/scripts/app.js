@@ -1,14 +1,14 @@
 (function () {
-const allStars = document.querySelectorAll(".stars");
+  const allStars = document.querySelectorAll(".stars");
 
-for (let i = 0; i < allStars.length; i++) {
-  allStars[i].addEventListener("click", rate);
-  allStars[i].addEventListener("mouseover", hover);
-  allStars[i].addEventListener("mouseout", noHover);
-}
+  for (let i = 0; i < allStars.length; i++) {
+    allStars[i].addEventListener("click", rate);
+    allStars[i].addEventListener("mouseover", hover);
+    allStars[i].addEventListener("mouseout", noHover);
+  }
   function rate(event) {
-    let clickedStar = event.target;
-    let stars = this.querySelectorAll(".star");
+    const clickedStar = event.target;
+    const stars = this.querySelectorAll(".star");
     let rated = false;
     stars.forEach(function(star) {
       if (rated) {
@@ -24,8 +24,8 @@ for (let i = 0; i < allStars.length; i++) {
     });
   }
   function hover(event) {
-    let clientStar = event.target;
-    let stars = this.querySelectorAll(".star");
+    const clientStar = event.target;
+    const stars = this.querySelectorAll(".star");
     let isHover = false;
     stars.forEach(function(star) {
       if (isHover) {
@@ -39,10 +39,9 @@ for (let i = 0; i < allStars.length; i++) {
     });
   }
   function noHover(event) {
-    let stars = this.querySelectorAll(".star");
+    const stars = this.querySelectorAll(".star");
     stars.forEach(function(star) {
     star.classList.remove("star-hover");
     });
   }
-
 })();
