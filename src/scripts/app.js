@@ -1,5 +1,7 @@
 (function () {
-  const allStars = document.querySelectorAll(".stars");
+  const allStars = document.querySelectorAll(".stars.star");
+  //const allStars = document.getElementsByClassName("stars star");
+  //const allStars = document.querySelectorAll(".star.stars");
 
   for (let i = 0; i < allStars.length; i++) {
     allStars[i].addEventListener("click", rate);
