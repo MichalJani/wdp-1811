@@ -92,7 +92,7 @@ footer {
   min-width: 120px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 769px) {
   .footer-menu {
     justify-content: space-around;
 
@@ -109,7 +109,7 @@ footer {
   .bottom_bar_something_new {
     display: flex;
     height: 50px;
-    width: 100vw;
+    width: 100%;
   }
 
   .something_else {
