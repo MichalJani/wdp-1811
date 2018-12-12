@@ -259,13 +259,15 @@
         padding: 0 3%;
     }
 
-    .nav-item {
-        height: 50px;
-        border: 1px solid $text-color;
-    }
+    .menu_overlist_box {
+        .nav-item {
+            height: 50px;
+            border: 1px solid $text-color;
+        }
 
-    .nav-link {
-        font-size: 18px;
+        .nav-link {
+            font-size: 18px;
+        }
     }
 
     .menu_bar_box_hamburger_icon {
