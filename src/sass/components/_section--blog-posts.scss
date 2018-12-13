@@ -1,9 +1,11 @@
 .section--blog-posts {
   a {
     text-decoration: none;
+    @extend .animation-on-hover;
    .post-box {
       margin-bottom: 2rem;
       &:hover {
+        @extend .animation-on-hover;
        .btn-main {
          color: #ffffff !important;
          background-color: $primary;
@@ -11,6 +13,7 @@
         }
         .post-info {
           h5 {
+          @extend .animation-on-hover;
           color: $primary;
           }
         }  
