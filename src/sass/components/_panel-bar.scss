@@ -39,6 +39,7 @@
         display: inline-block;
         margin: 0 0.5rem;
         font-weight: 600;
+        @extend .animation-on-hover;
 
         a {
           color: rgb(42, 42, 42);
@@ -46,10 +47,12 @@
           text-decoration: none;
           font-size: 18px;
           display: block;
+          @extend .animation-on-hover;
 
           &.active,
           &:hover {
             &::before {
+              @extend .animation-on-hover;
               content: '';
               position: absolute;
               bottom: 0;
@@ -84,6 +87,7 @@
 
           &.active,
           &:hover {
+            @extend .animation-on-hover;
             background-color: $primary;
           }
         }
