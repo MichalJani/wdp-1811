@@ -1,4 +1,5 @@
 @import "variables";
+@import "components/animation-on-hover";
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
 
@@ -28,4 +29,8 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+.bold_font {
+  font-weight: bold;
 }
