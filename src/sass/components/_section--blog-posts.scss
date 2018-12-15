@@ -2,52 +2,57 @@
   a {
     text-decoration: none;
     @extend .animation-on-hover;
-   .post-box {
+
+    .post-box {
       margin-bottom: 2rem;
+
       &:hover {
         @extend .animation-on-hover;
-       .btn-main {
-         color: #ffffff !important;
-         background-color: $primary;
-         text-decoration: none;
+
+        .btn-main {
+          color: #ffffff !important;
+          background-color: $primary;
+          text-decoration: none;
         }
+
         .post-info {
           h5 {
-          @extend .animation-on-hover;
-          color: $primary;
+            @extend .animation-on-hover;
+            color: $primary;
           }
-        }  
-      }
-  
-    .cover {
-      padding: 0;
-      background: {
-        color: #f4f5f7;
-        size: cover;
-        position: center;
-      }
-
-      .details {
-        padding: 15px 20px;
-        display: flex;
-        background-color: #ffffff;
-        font-size: 14px;
-
-        & > * {
-          flex: 1 1 auto;
-        }
-
-        .date {
-          text-align: left;
-          color: #212529;
-        }
-
-        .comments {
-          text-align: right;
-          color: #212529;
         }
       }
-    }
+
+      .cover {
+        padding: 0;
+
+        background: {
+          color: #f4f5f7;
+          size: cover;
+          position: center;
+        }
+
+        .details {
+          padding: 15px 20px;
+          display: flex;
+          background-color: #ffffff;
+          font-size: 14px;
+
+          &>* {
+            flex: 1 1 auto;
+          }
+
+          .date {
+            text-align: left;
+            color: #212529;
+          }
+
+          .comments {
+            text-align: right;
+            color: #212529;
+          }
+        }
+      }
 
       .post-info {
         padding: 25px;
@@ -73,30 +78,42 @@
       }
     }
   }
+
+  .blog_post_image{
+    width: 100%;
+  }
+
   @media (max-width: 800px) {
     h3 {
       text-align: center;
     }
+
     .mobile-container {
       display: block;
       text-align: center;
     }
+
     .row {
       text-align: center;
-     }
-     a {
-       .post-box {
-          text-align: center;
-        }
-     }
-  }  
+    }
+
+    a {
+      .post-box {
+        text-align: center;
+      }
+    }
+  }
+
   @media (max-width: 992px) {
     .heading {
       flex: 0 0 100%;
       max-width: 100%;
-    }  
-    h3 {
-        text-align: center;
     }
-  } 
+
+    h3 {
+      text-align: center;
+    }
+  }
 }
+
+
