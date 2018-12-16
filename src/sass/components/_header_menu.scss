@@ -88,6 +88,7 @@
 
     &:hover,
     &.active {
+        @extend .animation-on-hover;
         background-color: $primary;
     }
 
@@ -108,6 +109,7 @@
 
     &:hover,
     &.active {
+        @extend .animation-on-hover;
         background-color: $primary;
     }
 }
@@ -144,6 +146,7 @@
 }
 
 .menu_overlist_item:hover {
+    @extend .animation-on-hover;
     .menu_overlist_item_link {
         color: #ffffff;
     }
@@ -155,6 +158,7 @@
 }
 
 .menu_dropdown_list_item:hover {
+    @extend .animation-on-hover;
     background-color: white;
     border: 1px solid $primary;
 }
@@ -255,13 +259,15 @@
         padding: 0 3%;
     }
 
-    .nav-item {
-        height: 50px;
-        border: 1px solid $text-color;
-    }
+    .menu_overlist_box {
+        .nav-item {
+            height: 50px;
+            border: 1px solid $text-color;
+        }
 
-    .nav-link {
-        font-size: 18px;
+        .nav-link {
+            font-size: 18px;
+        }
     }
 
     .menu_bar_box_hamburger_icon {

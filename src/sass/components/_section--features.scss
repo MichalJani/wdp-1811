@@ -1,7 +1,9 @@
 .section--features {
   padding: 5rem 0;
+  
   a {
     text-decoration:none;
+    @extend .animation-on-hover;
     i {
         background-color: #ffffff;
         color: $text-color;
@@ -11,6 +13,7 @@
       color: $text-color;
     }
     &:hover, &:focus {
+      @extend .animation-on-hover;
       .content {
           color: $secondary;
     	 }
@@ -24,4 +27,24 @@
       }
     }
   }
+  @media (max-width: 480px) {
+    [class*="col-"] {
+      flex: 0 0 50%;
+      max-width: 100%;
+    }
+    padding: 2.5rem 0;
+  }
+  @media (max-width: 992px) {
+    [class*="col-"] {
+      flex: 0 0 50%;
+      max-width: 100%;
+    }
+    padding: 2.5rem 0;  
+  }
+  @media (max-width: 1024px) {
+    [class*="col-"] {
+      flex: 0 0 50%;
+      max-width: 100%;
+    }  
+  }  
 }
