@@ -1,0 +1,244 @@
+.section--promoted {
+  padding: 5rem 0;
+     .hot-deals {
+        height: 100%;
+        .row {
+          margin-left: 0;
+          margin-right:0;
+          .hot-deals-title {
+            height: 50px;
+            background-color: #2a2a2a;
+            color: #fff;
+            font-family: "Poppins - Semi Bold";
+            font-weight: 400;
+            text-transform: uppercase;
+            h4 {
+              padding-top: 10px;
+              }
+          }
+          .dots {
+            height: 50px;
+            background-color: #2a2a2a;
+            padding: 0;
+            ul {
+              margin: 0px;
+              padding-top: 20px;
+              list-style: none;
+              display: flex;
+              justify-content: flex-end;
+              li {
+                display: inline-block;
+                margin: 0 0.5rem;
+                a {
+                  display: block;
+                  width: 13px;
+                  height: 13px;
+                  border-radius: 6px;
+                  background-color: #e1e1e1;
+                  text-align: right;
+                  &:hover, &:focus {
+                    background-color: $primary;
+                  }
+                }  
+              }
+            }  
+          }
+        }
+        .photo {
+            height: 289px;
+            background-image: url('../images/furniture4.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            .add-to-card-button {
+              opacity: 0;
+              text-align: center;
+              text-transform: uppercase;
+              position: absolute;
+              top: 30%;
+              left: 35%;
+              .btn-main-small {
+                  color: #fff;
+                  background-color: $text-color;
+                  border-radius: 3px;
+                }
+            }
+            .circles {
+              display: flex;
+              justify-content: center;
+              opacity: 0;
+              padding-top: 50%;
+              .circle {
+                border-radius: 50%;
+                width: 5.4em;
+                height: 5.4em;
+                opacity: 0.9;
+                background-color: #3E3E3F;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                color: #ffffff;
+                font-family: "Poppins - Semi Bold";
+                font-weight: 400;
+                line-height: 20px;
+                text-transform: uppercase; 
+                 h3 {
+                  font-size: 2.4em;
+                 }
+                 h4 {
+                  font-size: 1.4em;
+                 }
+                } 
+            } 
+          &:hover {
+            .circles {
+              opacity: 1;
+            }
+            .add-to-card-button {
+              opacity: 1;
+            }
+          }
+        }
+        .content {
+          text-align: center;
+          padding: 20px;
+        h5 {
+          color: $text-color;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 1px;
+        }
+        .stars {
+          .star {
+            color: rgb(42, 42, 42);
+            @extend .far;
+            @extend .fa-star;
+            &.full {
+              @extend .fas;
+            }
+            &.client-star {
+              @extend .fas;
+              color: $primary;
+            }
+            &.star-hover {
+            color: $primary; 
+            }
+          }
+        }
+      }
+      .line {
+        margin: 0 10px;
+        border-bottom: 1px solid #2a2a2a;
+        position: relative;
+        &::before {
+         content: '';
+         position: absolute;
+         bottom: -1px;
+         left: 50%;
+         width: 30px;
+         border-bottom: 4px solid $primary;
+         transform: translateX(-50%);
+        }
+      }
+      .actions {
+        padding: 15px 10px 10px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }   
+    }
+    .col-lg-8 {
+      padding:0;
+    }
+    .product-of-the-day {
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      height: 100%;
+      background: {
+        image: url('../images/sofas/sofa2.jpeg');
+        size: cover;
+        position: center;
+        repeat: no-repeat;
+      }
+      .headings {
+        background-color: rgba(102,102,102,0.5);;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        h1 {
+          color: #ffffff;
+          text-align: center;
+          text-transform: uppercase;
+        }
+        h3 {
+          color: #ffffff;
+          text-align: center;
+          text-transform: uppercase;
+        }
+        .shop-now-btn {
+          text-align: center;
+          text-transform: uppercase;
+          .btn-main {
+            color: $text-color;
+            background-color: #ffffff;
+            border-radius: 3px;
+            &:hover {
+              color: #ffffff;
+              background-color: $text-color;
+            }
+          }
+        }    
+      }
+      .buttons {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        .btn-main {
+          float: left;
+          width: 50%;
+          text-align: center;
+        }
+        a {
+          &:hover, &:focus {
+            i {
+              background-color: $primary;
+            }
+          }  
+          i {
+            background-color: #2a2a2a;
+            color: #fff;
+              &:hover, &:focus {
+                background-color: $primary;
+              }
+          }
+        }
+      }  
+    }
+  @media (max-width: 1025px) {
+    [class*="col-"] {
+       .hide_desktop {
+        display: none;
+      }
+    } 
+  }
+  @media (max-width: 800px) {
+    [class*="col-"] {
+        flex: 0 0 100%;
+       .hide_tablet {
+        display: none;
+        }
+    }    
+  }
+  @media (max-width: 480px) {
+    [class*="col-"] {
+       flex: 0 0 100%;
+       .hide_mobile {
+        display: none;
+        }
+    } 
+  }
+}
